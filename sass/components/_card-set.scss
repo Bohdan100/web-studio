@@ -3,8 +3,13 @@
   flex-wrap: wrap;
   gap: 30px;
 
+  margin: 0;
   padding: 0;
   list-style: none;
+
+  &__item {
+    margin: 0 auto;
+  }
 
   &__container {
     position: relative;
@@ -13,6 +18,19 @@
 
   &__photo {
     display: block;
+
+    @include mobile {
+      width: 450px;
+      height: 294px;
+    }
+
+    @include tablet {
+      width: 354px;
+    }
+
+    @include desctop {
+      width: 370px;
+    }
   }
 
   &__case {
