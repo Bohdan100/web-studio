@@ -1,11 +1,26 @@
 .card-set {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  flex-basis: 100%;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  justify-content: center;
+
+  @include mobile {
+    flex-basis: calc(100% - 30px);
+  }
+
+  @include tablet {
+    justify-content: start;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @include desctop {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 
   &__item {
     margin: 0 auto;
@@ -18,18 +33,18 @@
 
   &__photo {
     display: block;
+    height: 294px;
 
     @include mobile {
-      width: 450px;
-      height: 294px;
+      width: 100%;
     }
 
     @include tablet {
-      width: 354px;
+      width: 450px;
     }
 
     @include desctop {
-      width: 370px;
+      width: calc((100% - 60px) / 3);
     }
   }
 
@@ -40,13 +55,6 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     background-color: var(--first-background-color);
-
-    @include tablet {
-      height: 146px;
-    }
-
-    @include desctop {
-      height: auto;
     }
   }
 
