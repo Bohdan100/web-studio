@@ -52,10 +52,19 @@
 
   &__image {
     display: block;
+    max-width: 100%;
+    // height: auto;
+    // object-fit: cover;
+    // width: 100vw;
   }
 
   &__container {
-    padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @include desctop {
+      padding-bottom: 30px;
+    }
   }
 
   &__name {

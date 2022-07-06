@@ -45,7 +45,7 @@
   &--active::after {
     position: absolute;
     left: 0;
-    margin-top: 28px;
+    margin-top: 33px;
 
     content: "";
     display: block;
@@ -55,5 +55,9 @@
 
     background-color: #2196f3;
     border-radius: 2px;
+
+    @include desctop {
+      margin-top: 28px;
+    }
   }
 }

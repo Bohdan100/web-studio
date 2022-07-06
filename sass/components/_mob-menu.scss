@@ -131,8 +131,13 @@
 .menu-open-btn {
   display: block;
   margin-left: auto;
+
   width: 40px;
   height: 40px;
+  padding: 0;
+  border: none;
+
+  background-color: var(--first-background-color);
 
   @include tablet {
     display: none;
@@ -153,6 +158,10 @@
 
   width: 40px;
   height: 40px;
+  padding: 0;
+  border: none;
+
+  background-color: var(--first-background-color);
 }
 
 .menu-close-icon {

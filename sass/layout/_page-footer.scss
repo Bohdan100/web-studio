@@ -10,13 +10,14 @@
       display: inline-flex;
       justify-content: space-between;
       align-items: baseline;
+      padding: 0;
     }
   }
 
   &--flex {
     @include tablet {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: baseline;
     }
 
@@ -39,6 +40,10 @@
 
   &__network-container {
     margin-top: 60px;
+
+    @include tablet {
+      margin-top: 0;
+    }
   }
 
   &__network-text {

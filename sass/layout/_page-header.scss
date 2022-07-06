@@ -13,6 +13,11 @@
 
   z-index: 1;
 
+  @include tablet {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   &--flex {
     display: flex;
     align-items: center;

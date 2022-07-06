@@ -4,5 +4,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--first-text-color);
 
-  padding-top: 85.75px;
+  padding-top: 64px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
 }

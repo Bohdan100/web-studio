@@ -40,7 +40,12 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
-  padding-top: 85.75px;
+  padding-top: 64px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 .container {
@@ -198,6 +203,9 @@ body {
   margin-left: auto;
   width: 40px;
   height: 40px;
+  padding: 0;
+  border: none;
+  background-color: var(--first-background-color);
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn {
@@ -218,6 +226,9 @@ body {
   transform: translateX(-25px) translateY(16px);
   width: 40px;
   height: 40px;
+  padding: 0;
+  border: none;
+  background-color: var(--first-background-color);
 }
 
 .menu-close-icon {
@@ -271,13 +282,18 @@ body {
 .site-nav__link--active::after {
   position: absolute;
   left: 0;
-  margin-top: 28px;
+  margin-top: 33px;
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__link--active::after {
+    margin-top: 28px;
+  }
 }
 
 .contacts {
@@ -710,7 +726,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
   justify-content: center;
@@ -831,6 +847,12 @@ body {
   background-color: var(--first-background-color);
   border-bottom: 1px solid #ececec;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 .page-header--flex {
   display: flex;
@@ -1070,9 +1092,16 @@ body {
 }
 .team__image {
   display: block;
+  max-width: 100%;
 }
 .team__container {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__container {
+    padding-bottom: 30px;
+  }
 }
 .team__name {
   margin-bottom: 10px;
@@ -1171,12 +1200,13 @@ body {
     display: inline-flex;
     justify-content: space-between;
     align-items: baseline;
+    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .page-footer--flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
@@ -1197,6 +1227,11 @@ body {
 }
 .page-footer__network-container {
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .page-footer__network-container {
+    margin-top: 0;
+  }
 }
 .page-footer__network-text {
   margin-bottom: 20px;
@@ -1225,7 +1260,6 @@ body {
 .projects__btn-list {
   display: flex;
   flex-wrap: wrap;
-  max-inline-size: 364px;
   padding: 0;
   margin: 0 auto 40px auto;
   row-gap: 15px;
