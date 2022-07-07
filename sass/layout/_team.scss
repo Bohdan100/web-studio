@@ -25,7 +25,6 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -53,7 +52,7 @@
   &__image {
     display: block;
     max-width: 100%;
-    // height: auto;
+    height: auto;
     // object-fit: cover;
     // width: 100vw;
   }
@@ -75,6 +74,7 @@
 
   &__position {
     margin-bottom: 16px;
+    text-align: center;
 
     @include font(16px, null, calc(19 / 16), null);
 

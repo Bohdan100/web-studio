@@ -754,7 +754,7 @@ body {
 .card-set__photo {
   display: block;
   max-width: 100%;
-  height: 294px;
+  height: auto;
 }
 .card-set__case {
   margin-top: 0;
@@ -771,10 +771,20 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+@media screen and (max-width: 299px) {
+  .card-set__title {
+    text-align: center;
+  }
+}
 .card-set__description {
   font-size: 16px;
   line-height: 1.875;
   color: var(--second-text-color);
+}
+@media screen and (max-width: 299px) {
+  .card-set__description {
+    text-align: center;
+  }
 }
 
 .card-set__item {
@@ -1093,6 +1103,7 @@ body {
 .team__image {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .team__container {
   padding-top: 30px;
@@ -1111,6 +1122,7 @@ body {
 }
 .team__position {
   margin-bottom: 16px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.1875;
   color: var(--second-text-color);
