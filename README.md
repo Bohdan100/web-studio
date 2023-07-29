@@ -12,6 +12,10 @@ It's a website that showcases the products and advantages of the Web studio comp
 1. Download Live Server
 2. Launch the application -> Go live.
 
+Photo:
+
 ![](./public/project-1.png)
+
+Photo:
 
 ![](./public/project-2.png)
